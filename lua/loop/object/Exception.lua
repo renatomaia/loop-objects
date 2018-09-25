@@ -22,7 +22,7 @@ function Exception:__tostring()
 			if size%2 == 1 then
 				field = tostring(self[field])
 			end
-			return prefix:sub(1, size/2)..field
+			return prefix:sub(1, size//2)..field
 		end
 	)
 end
